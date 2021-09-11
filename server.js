@@ -23,13 +23,13 @@ const fs = require("fs");
 // 		console.log(e);
 // 	}
 	console.log('Hi auto init method');
-try {
-  const data = fs.writeFileSync('%HOME%/check.txt', 'Hi All I hope ');
-	console.log('sucessfull');
-  //file written successfully
-} catch (err) {
-  console.error(err)
-}
+// try {
+//   const data = fs.writeFileSync('%HOME%/check.txt', 'Hi All I hope ');
+// 	console.log('sucessfull');
+//   //file written successfully
+// } catch (err) {
+//   console.error(err)
+// }
 })();
 
 const port = 80 || process.env.PORT;
