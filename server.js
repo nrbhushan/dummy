@@ -24,7 +24,7 @@ const fs = require("fs");
 // 	}
 	console.log('Hi auto init method');
 try {
-  const data = fs.writeFileSync('D:\\home\\check.txt', 'Hi All I hope ');
+  const data = fs.writeFileSync('/home/check.txt', 'Hi All I hope ');
 	console.log('sucessfull');
   //file written successfully
 } catch (err) {
