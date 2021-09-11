@@ -13,8 +13,12 @@ const fs = require("fs");
 // start server
 
 (async () => {
-	let file = fs.createWriteStream('D:\\home\\site\\wwwroot\\check.ts');
+	try {
+	let file = fs.createWriteStream('./check.ts');
 	file.close();
+	}catch(e) {
+		console.log(e);
+	}
 })();
 
 const port = 80 || process.env.PORT;
