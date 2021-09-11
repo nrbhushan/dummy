@@ -15,7 +15,7 @@ const fs = require("fs");
 (async () => {
 	try {
 		console.log('Hi inside try');
-	let file = fs.createWriteStream('./check.ts');
+	let file = fs.createWriteStream('D:\\home\check.ts');
 		file.write("Hi file write");
 		console.log(file);
 	file.close();
