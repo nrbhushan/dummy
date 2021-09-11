@@ -1,0 +1,32 @@
+{
+    "name": "dummy",
+    "version": "1.0.0",
+    "description": "dummy test",
+    "main": "server.js",
+    "scripts": {
+        "start": "node ./server.js",
+        "start:dev": "nodemon ./server.js"
+    },
+    "dependencies": {
+        "@google-cloud/vision": "^2.3.6",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "cryptr": "^6.0.2",
+        "express": "^4.17.1",
+        "express-jwt": "^6.0.0",
+        "jsdom": "^16.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "puppeteer": "^10.1.0",
+        "redis": "^3.1.2",
+        "request": "^2.88.2",
+        "request-ip": "^2.1.3",
+        "request-promise-native": "^1.0.9",
+        "requests": "^0.3.0",
+        "rootpath": "^0.1.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    },
+    "author": "Rashtra Bhushan",
+    "license": "ISC"
+}
