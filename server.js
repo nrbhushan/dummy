@@ -13,15 +13,23 @@ const fs = require("fs");
 // start server
 
 (async () => {
-	try {
-		console.log('Hi inside try');
-	let file = fs.createWriteStream('D:\\home\check.ts');
-		file.write("Hi file write");
-		console.log(file);
-	file.close();
-	}catch(e) {
-		console.log(e);
-	}
+// 	try {
+// 	console.log('Hi inside try');
+// 	let file = fs.createWriteStream('D:\\home\\check.ts');
+// 	file.write("Hi file write");
+// 	console.log(file);
+// 	file.close();
+// 	}catch(e) {
+// 		console.log(e);
+// 	}
+	console.log('Hi auto init method');
+try {
+  const data = fs.writeFileSync('D:\\home\\check.txt', 'Hi All I hope ');
+	console.log('sucessfull');
+  //file written successfully
+} catch (err) {
+  console.error(err)
+}
 })();
 
 const port = 80 || process.env.PORT;
