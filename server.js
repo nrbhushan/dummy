@@ -11,7 +11,7 @@ app.use(cors());
 // app.use(errorHandler);
 
 // start server
-app.use('/common',(req,res,next)=>{
+app.get('/common',(req,res)=>{
 console.log('*****************',__dirname);
 res.send(__dirname);
 });
