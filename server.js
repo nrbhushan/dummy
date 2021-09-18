@@ -2,6 +2,7 @@ require('rootpath')();
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const path=require('path');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -12,7 +13,9 @@ app.use(cors());
 
 // start server
 app.get('/common',(req,res)=>{
-console.log('*****************',__dirname);
+console.log('*****************',path.join(__dirname, '../'));
+console.log('*****************',path.join(__dirname, '../../'));
+console.log('*****************',path.join(__dirname, '../../../'));
 res.send(__dirname);
 });
 (async () => {
