@@ -2,7 +2,7 @@ require('rootpath')();
 const express = require('express');
 const app = express();
 
-const Fs = require('@supercharge/filesystem');
+// const Fs = require('@supercharge/filesystem');
 const cors = require('cors');
 const path=require('path');
 const bodyParser = require('body-parser');
@@ -15,7 +15,7 @@ app.use(cors());
 
 // start server
 app.get('/common',async (req,res)=>{
-console.log('--------------',await Fs.homeDir());
+// console.log('--------------',await Fs.homeDir());
 console.log('*****************',path.join(__dirname, '../'));
 console.log('*****************',path.join(__dirname, '../../'));
 console.log('*****************',path.join(__dirname, '../../../'));
