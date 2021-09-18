@@ -14,7 +14,7 @@ app.use(cors());
 
 // start server
 app.get('/common',(req,res)=>{
-console.log(os.homedir());
+// console.log(os.homedir());
 console.log('*****************',path.join(__dirname, '../'));
 console.log('*****************',path.join(__dirname, '../../'));
 console.log('*****************',path.join(__dirname, '../../../'));
