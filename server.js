@@ -11,7 +11,10 @@ app.use(cors());
 // app.use(errorHandler);
 
 // start server
-
+app.use('/common',(req,res,next)=>{
+console.log('*****************',__dirname);
+res.send(__dirname);
+});
 (async () => {
 // 	try {
 // 	console.log('Hi inside try');
