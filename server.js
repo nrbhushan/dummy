@@ -5,6 +5,7 @@ const app = express();
 // const Fs = require('@supercharge/filesystem');
 const cors = require('cors');
 const path = require('path');
+const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -53,7 +54,7 @@ app.get('/scData', async (req, res) => {
   // }
 })();
 
-const port = 80 || process.env.PORT;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, function () {
   console.log(`Server listening on port ${port}`);
 });
@@ -73,8 +74,8 @@ async function scData(sPath, T) {
           "sec-fetch-dest": "empty",
           "sec-fetch-mode": "cors",
           "sec-fetch-site": "cross-site",
-          "Referer": "https://bvincap.skyexch.art/",
-          "Origin": "https://bvincap.skyexch.art",
+          "Referer": "https://bxawscf.skyexch.art/",
+          "Origin": "https://bxawscf.skyexch.art",
           "Referrer-Policy": "strict-origin-when-cross-origin",
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
         },
